@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIAMROS CEMENT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stylesheets/scrollToTop.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/maiamrocement.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/maiamrocement.png">
+</head>
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.4;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-30px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+
+    .bounce {
+        animation: bounce 2s infinite;
+    }
+
+    .active-button {
+        background-color: #F49C08 !important;
+
+        transition: all ease 0.5s;
+    }
+
+    nav .right ul li a {
+        transition: color 0.5s ease, transform 0.5s ease;
+    }
+
+    nav .right ul li a:hover {
+        color: #F49C08;
+        transform: scale(1.1);
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <nav class="flex items-center justify-between px-6 py-3 border-b-2">
+            <div class="left">
+                <a href="/"><img class="h-[80px]" style="width: auto;" src="/images/logo.jpg" alt=""></a>
+                <!-- <a href="/" style="font-weight: bold;">MAIAMROS CEMENT</a> -->
+            </div>
+            <div class="right">
+                <ul class="flex gap-6 items-center  ">
+                    <li class="text-[#16436A] font-bold"><a href="/">Home</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="#about">About</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="#gallery">Gallery</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="#contact">Contact</a></li>
+                    <li class="text-[#16436A] font-bold"><a href="/login">Login</a></li>
+                    <h4><i id="menu-btn" class="ri-menu-line"></i></h4>
+                </ul>
+            </div>
+        </nav>
+        <div id="slidebar">
+            <a href="/">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <!-- <a href="/register">Register</a> -->
+            <a href="/login">Login</a>
+        </div>
+        <div class="page-1 ">
+            <div class="page-1-content">
+                <h1 class="text-[40px] md:text-5xl lg:text-6xl font-bold text-[red] leading-none"
+                    style="text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5);">
+                    Welcome to MAIAMROS CEMENT</h1>
+                <p class="text-[#fff] " style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                ">We are a team of dedicated professionals committed to delivering unparalleled services in the Cement industry. Our mission is to ensure the perfect construction solutions for projects across Uttar Pradesh.  </p>
+
+                <button
+                    class="bounce text-white w-[fit-content] py-2 px-5 mt-2 font-semibold rounded-lg bg-[red]">Get
+                    started <i class="ri-arrow-down-double-line"></i></button>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="/images/cement1.avif" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/images/cement2.avif" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/cement1.avif" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="/images/cement2.avif" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/images/cement1.avif" alt="">
+                    </div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+        <div class="container mx-auto p-8" id="about">
+            <h1 class="text-3xl font-bold mb-4 text-center">About Our Cement Company</h1>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <img src="/images/about .jpg" alt="Cement Company" class="w-full md:w-auto rounded-lg shadow-lg mb-4 md:mb-0">
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <p class="text-lg mb-4">
+                            Rohit Kumar Amit Kumar Building Material and Suppliers was founded by Mr. Rohit Kumar on April 1, 2024.
+                            We are dedicated to providing high-quality building materials to our customers, with a focus on excellence and reliability.
+                            Our flagship product, Maiamros Cement, is known for its premium quality and durability.
+                            We believe in delivering products that exceed our customers' expectations and contribute to the success of their projects.
+                        </p>
+                        </p>
+                        <p class="text-lg" style="font-weight: bold;">
+                            Our Mission:
+                        </p>
+                        <p class="mb-4">
+                            Our mission is to provide our customers with the best quality products available, ensuring their satisfaction and success.
+                            We strive to continually improve and innovate to meet the evolving needs of our customers and the industry.
+                        </p>
+                        <p class="text-lg" style="font-weight: bold;">
+                            Our Vision:
+                        </p>
+                        <p class="mb-4">
+                            Our vision is to become a leading provider of high-quality building materials, creating value through excellence and innovation.
+                            We aim to establish a pan-India supply network within five years, delivering our products to customers across the country.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="page-2" >
+            <h1 class="text-xl md:text-3xl lg:text-4xl font-bold text-[#16436A] leading-none">WHERE WOULD YOU LIKE TO SOURCE YOUR BUILDING MATERIALS?</h1>
+            <p class="mt-2 text-sm md:text-base lg:text-lg">Select from our Range to Achieve your Construction Goals</p>
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="relative" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="/images/maiamrocement.png" alt="Image 1" class="w-50 h-auto rounded-lg shadow-lg">
+                    <p class="absolute bottom-0 left-0 right-0 bg-white text-center py-2" style="font-weight: bold;">Portland Pozzalana Cement (PPC)</p>
+                </div>
+                <div class="relative" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="/images/odinary-removebg-preview.png" alt="Image 2" style="height: auto; width: 320px;" class=" rounded-lg shadow-lg">
+                    <p class="absolute bottom-0 left-0 right-0 bg-white text-center py-2 " style="font-weight: bold;">Ordinary Portland Cement (OPC)</p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div class="pricing-page" id="gallery">
+            <h1 class="text-[30px] font-bold mb-6 text-[#16436A] font-bold">Gallery</h1>
+            <div class="flex justify-center flex-wrap gap-8 ">
+                <div class="w-[350px] h-[360px] border-2 rounded-lg">
+                    <div class="top h-[80%] ">
+                        <img class="w-full h-full object-cover" src="/images/cem2.jpg" alt="">
+                    </div>
+                    <div class="bottom h-[20%] flex justify-center items-center">
+                        <h2 class="font-semibold">Marketing</h2>
+                    </div>
+                </div>
+                <div class="w-[350px] h-[360px] border-2 rounded-lg">
+                    <div class="top h-[80%]">
+                        <video class="w-full h-full object-cover" autoplay muted controls>
+                            <source src="/images/cem3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="bottom h-[20%] flex justify-center items-center">
+                        <h2 class="font-semibold">Work</h2>
+                    </div>
+                </div>
+                <div class="w-[350px] h-[360px] border-2 rounded-lg">
+                    <div class="top h-[80%] ">
+                        <img class="w-full h-full object-cover" src="/images/cem1.jpg" alt="">
+                    </div>
+                    <div class="bottom h-[20%] flex justify-center items-center">
+                        <h2 class="font-semibold">Marketing</h2>
+                    </div>
+                </div>
+
+                <div class="w-[350px] h-[360px] border-2 rounded-lg">
+                    <div class="top h-[80%] ">
+                        <img class="w-full h-full object-cover" src="/images/owner1.jpg" alt="">
+                    </div>
+                    <div class="bottom h-[20%] flex justify-center items-center">
+                        <h2 class="font-semibold">Mr Ramvir Singh <br> Managing Director</h2>
+                    </div>
+                </div>
+
+                <div class="w-[350px] h-[360px] border-2 rounded-lg">
+                    <div class="top h-[80%] ">
+                        <img class="w-full h-full object-cover" src="/images/owner2.jpg" alt="">
+                    </div>
+                    <div class="bottom h-[20%] flex justify-center items-center">
+                        <h2 class="font-semibold">Rohit Kumar <br> Owner</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page-4 ">
+            <div class="page-4-content">
+
+                <h1 class="text-[30px] font-bold mb-4 text-[#16436A] font-bold
+                ">GOT A QUESTION?</h1>
+                <h3 class="text-md md:text-2xl mb-6" style="color: #646363;">Frequently Asked Questions</h3>
+
+                <div class="layout text-left">
+                    <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>WHY SHOULD I CHOOSE MAIAMROS CEMENT?
+
+                            </p>
+                            <i class="ri-arrow-down-double-line"></i>
+                        </div>
+                        <div class="accordion__answer">
+                            <p><span style="font-weight: bold;">Premium Quality:</span> Maiamros Cement is renowned for its exceptional quality, ensuring superior strength and durability in construction projects. <br>
+                                <span style="font-weight: bold;">Premium Quality:</span>Reliable Supply: We guarantee consistent and timely supply, ensuring that your projects stay on track without any delays. <br> <span style="font-weight: bold;">Innovation:</span> We continuously invest in innovation to provide cutting-edge cement solutions that meet the evolving needs of the construction industry.
+                                Customer <br> <span style="font-weight: bold;">Satisfaction:</span> Our commitment to customer satisfaction is unparalleled. We prioritize your needs and strive to exceed your expectations at every step.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion__question flex justify-between items-center">
+                            <p>WHY IS MAIAMROS CEMENT SUPERIOR TO REGULAR CEMENT?
+                            </p>
+                            <i class="ri-arrow-down-double-line"></i>
+
+                        </div>
+
+                        <div class="accordion__answer">
+                            <p>
+                                <span style="font-weight: bold;">Higher Quality Standards:</span>  Maiamros Cement undergoes rigorous quality control measures, ensuring superior strength, durability, and consistency compared to regular cement. <br>
+                                <span style="font-weight: bold;">Advanced Formulation:</span> Our cement is formulated with advanced technologies and high-quality ingredients, resulting in better performance and longevity in construction projects. <br>
+                                <span style="font-weight: bold;">Innovative Solutions:</span> We offer innovative cement solutions tailored to specific construction needs, providing versatility and efficiency that regular cement may not match.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="contact-content" id="contact">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Contact Us</h1>
+                <div class="flex flex-col md:flex-row justify-center items-center">
+                    <div class="left md:w-1/2 text-black px-4">
+                        <h3 class="text-lg md:text-xl mb-4">Feel free to contact us for any queries or feedback👋</h3>
+                        <div class="bg-white p-4 rounded-md">
+                            <form action="/contact" method="post" id="sheetdb-form" class="flex flex-col gap-4">
+                                <input type="text" name="name" placeholder="Your Name" class=" text-black p-2 border rounded-md"
+                                    required>
+                                <input type="email" name="email" placeholder="Your Email" class="p-2 text-black border rounded-md"
+                                    required>
+                                    <textarea placeholder="Message" class="p-2 border rounded-md text-black" 
+                                    name="message"></textarea>
+                                <button type="submit"
+                                    class="contract-button p-2 bg-[red] font-semibold text-white rounded-md hover:bg-blue-800 transition-colors">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right md:w-1/2 mt-4 md:mt-0">
+                        <iframe class="w-full h-96 md:h-[400px]"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3543.5977483192437!2d77.97703107545496!3d27.357041576385118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDIxJzI1LjQiTiA3N8KwNTgnNDYuNiJF!5e0!3m2!1sen!2sin!4v1713603320709!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="part-1">
+                    <h1>Locations</h1>
+                    <div class="map-container flex flex-col gap-4 mt-2">
+                        <div class="sm:w-[300px] md:w-[400px]">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3543.5977483192437!2d77.97703107545496!3d27.357041576385118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDIxJzI1LjQiTiA3N8KwNTgnNDYuNiJF!5e0!3m2!1sen!2sin!4v1713603320709!5m2!1sen!2sin"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="part-4">
+                    <h1>Let's Talk</h1>
+                    <ul>
+                        <li><i class="ri-map-pin-line"></i>Vill.- Mai , Teh.-Sadabad, Dis.- Hathras
+                            Uttar Pradesh Pin code 281302
+                            
+                        </li>
+                        <li><i class="ri-phone-line"></i>7078646750 
+                        </li>
+                        <li><i class="ri-phone-line"></i>8923772263
+                        </li>
+
+                        <!-- 
+                    <li><i class="ri-map-pin-line"></i>&nbsp; Office Chowdhry Mohalla near Munazir Building Katihar Bihar 854105
+                    </li>
+                    <li><i class="ri-phone-line"></i>&nbsp;8092392331</li>
+                    <li><i class="ri-phone-line"></i>&nbsp; 8100381856</li>
+                    <li><i class="ri-phone-line"></i>&nbsp; 8100391856</li> -->
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="part-1">
+                    <h1>© 2024 Rohit Kumar Amit Kumar Building Material and Suppliers</h1>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="scroll-to-top" class="bounce" onclick="scrollToTop()">
+        <span>&#8593;</span>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Hotel room change script -->
+
+    <!-- FAQ Section JS -->
+    <script>
+        let answers = document.querySelectorAll(".accordion");
+        answers.forEach((event) => {
+            event.addEventListener("click", () => {
+                if (event.classList.contains("active")) {
+                    event.classList.remove("active");
+                } else {
+                    event.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+    <!-- Sidebar JS -->
+    <script src="/javascripts/sidebar.js"></script>
+
+    <!-- Scroll to top JS -->
+    <script src="/javascripts/scrollToTop.js"></script>
+
+</body>
+
+</html>
